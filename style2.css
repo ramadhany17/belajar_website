@@ -1,0 +1,105 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+}
+
+nav{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 25px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.nav-right{
+    float: right;
+    padding-right: 30px ;
+}
+.nav-left{
+    float: left;
+    padding-left: 30px;
+}
+.nav-right a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.nav-left a{
+    color: black;
+    text-decoration: none;
+}
+
+#home{
+    background-image: url(img/jumbotron.jpg);
+    background-size: cover;
+    height: 600px;
+}
+
+.hero-text{
+    padding-top: 200px;
+    text-align: center;
+    color: #343333;
+}
+
+
+#articles{
+    padding-top: 30px;
+    height: 600px;
+    background-color: #f4f7f4;
+    text-align: center;
+}
+
+.articles{
+    margin: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article{
+    width: 25%;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 5px;
+}
+
+.article img{
+    width:100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.article-text{
+    margin: 10px 20px;
+}
+
+.article-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.about{
+    display: flex;
+}
+
+.about-image {
+    width: 50%;
+}
+.about-text{
+    margin: 30px 40px;
+    width: 50%;
+    text-align: center;
+}
+
+#subscribe{
+    padding-top: 150px;
+    height: 400px;
+    background-color: #f4f7f4;
+    text-align: center;
+}
+
+.form input{
+    width:100px
+}
+
+

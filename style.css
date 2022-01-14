@@ -1,0 +1,84 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+}
+.home{
+    
+    background-image: url(img/jumbotron.jpg);
+    background-size: cover;
+    text-align: center;
+    height: 500px;
+}
+.home h1{
+    font-size:50px;
+}
+
+nav{
+    height: 60px;
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.nav-right{
+    float: right;
+}
+.nav-left{
+    float: left;
+    padding-left: 40px;
+}
+.nav-right a{
+    color: black;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+
+.about-wrapper{
+    background-color: #f4f7f4;
+    text-align: center;
+    margin-top: 50px;
+    height: 500px;
+}
+.about{
+    
+    width: 25%;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 5px;
+}
+.abouts{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.about p{
+    font-size: 12px;
+}
+.about img{
+    width: 100%;
+}
+.articles{
+    display: flex;
+}
+.article{
+    width:50%;
+    text-align: center;
+}
+.article img{
+    width:100%;
+}
+
+.subscribe-wrapper{
+    padding-top: 150px;
+    background-color: #f4f7f4;
+    text-align: center;
+    height: 400px;
+}
