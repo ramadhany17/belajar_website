@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=auto, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
@@ -45,11 +45,13 @@
                     }
 
                     //sum
+                    let total=0;
                     for(let j=0;j<arrmix.length;j++){
                         if(typeof arrmix[j]=='number'){
-                            let total = total+arrmix[j];
+                            total += arrmix[j];
                         }
                     }
+                    console.log(total);
                     
                 }else{
                     console.log(false);
@@ -71,32 +73,60 @@
         // print the array of sum array a + array b
         // else print boolean
 
-        class Nmr2{
-            constructor(arr1,arr2){
-                this.arr1=[ 3, 100, 283, 'saya', 'adalah', 'kapiten', 75 ]
-                this.arr2=[ 200, 300, 21, 'dari', indonesia ]
-            }
+            class Nmr2{
+                constructor(arr1,arr2){
+                    this.arr1=[ 3, 100, 283, 'saya', 'adalah', 'kapiten', 75 ]
+                    this.arr2=[ 200, 300, 21, 'dari', 'indonesia' ]
+                }
 
-            cond(){
-                if(this.arr1+this.arr2!=32){
+                cond2(){
+                    let sum=0;
+                    let arrmix1=this.arr2.concat(this.arr2);
                     let arrmix=this.arr1.concat(this.arr2);
-                    for(let i=0;i<arrmix.length;i++){
-                        console.log(arrmix[i]);
+                    for(let j=0;j<arrmix1.length;j++){
+                            if(typeof arrmix1[j]=='number'){
+                                sum += arrmix1[j];
+                            }
+                    }
 
-                        if(i=1){
-                            console.log(arrmix[i])
+                    if(sum!=32){
+                        
+                        // for(let i=0;i<arrmix.length;i++){
+                        //     console.log(arrmix[i]);
+                        // }
+
+                        //modulo 1
+                        for(let j=0;j<arrmix.length;j++){
+                            if(arrmix[j]%2==1){
+                                console.log(arrmix[j])
+                            }
                         }
 
+                        //string
+                        for(let j=0;j<arrmix.length;j++){
+                            if(typeof arrmix[j]=='string'){
+                                console.log(arrmix[j])
+                            }
+                        }
 
+                        //sum
+                        let total=0;
+                        for(let j=0;j<arrmix.length;j++){
+                            if(typeof arrmix[j]=='number'){
+                                total += arrmix[j];
+                            }
+                        }
+                        console.log(total);
+                        
+                    }else{
+                        console.log(false);
                     }
-                    console.log(this.arr4[1]);
-                    console.log(this.Arr3+this.Arr4);
-
-                }else{
-                    console.log(false);
                 }
+
             }
-        }
+
+            let quiz2=new Nmr2;
+            console.log(quiz2.cond2());
             // 3. Array: [ 29, 12, 30, 'ini', 'saya', 85 ]
             // Array: [ 'cyber', 'security', 20, 15, 21]
             // jika ( panjang array ) + a = 28,
@@ -106,14 +136,54 @@
             // print the array of modulo = 0
             // else print boolean
         
-                // class Nmr3{
-                //     Arr5= [ 29, 12, 30, 'ini', 'saya', 85 ];
-                //     Arr6= [ 'cyber', 'security', 20, 15, 21];
+            class Nmr3{
+                constructor(arr1,arr2){
+                    this.arr1=[ 29, 12, 30, 'ini', 'saya', 85 ]
+                    this.arr2=[ 'cyber', 'security', 20, 15, 21]
+                }
 
-                //     cond(){
+                cond3(){
+                    let a=4;
+                    let arrmix=this.arr1.concat(this.arr2);
 
-                //     }
-                // }
+                    if((arrmix.length+a)==28){
+                        
+                        // for(let i=0;i<arrmix.length;i++){
+                        //     console.log(arrmix[i]);
+                        // }
+
+                        //modulo 0
+                        for(let j=0;j<arrmix.length;j++){
+                            if(arrmix[j]%2==0){
+                                console.log(arrmix[j])
+                            }
+                        }
+
+                        //string
+                        for(let j=0;j<arrmix.length;j++){
+                            if(typeof arrmix[j]=='string'){
+                                console.log(arrmix[j])
+                            }
+                        }
+
+                        //sum
+                        let total=0;
+                        for(let j=0;j<arrmix.length;j++){
+                            if(typeof arrmix[j]=='number'){
+                                total += arrmix[j];
+                            }
+                        }
+                        console.log(total);
+                        
+                    }else{
+                        console.log(false);
+                    }
+                }
+
+            }
+
+            let quiz3=new Nmr3;
+            console.log(quiz3.cond3());
 
             // 4. Array: [ 20, 12, 43, 54, 24 ]
             // Array: [ 'saya', 'adalah', 'seorang', 'pemusik', 0, 201]
@@ -122,6 +192,45 @@
             // print the array if the index modulo = 1
             // print the array of string
             // else print boolean
+
+            class Nmr4{
+            constructor(arr1,arr2){
+                this.arr1=[ 20, 12, 43, 54, 24 ]
+                this.arr2=[ 'saya', 'adalah', 'seorang', 'pemusik', 0, 201]
+            }
+
+                cond4(){
+                    let arrmix=this.arr1.concat(this.arr2);
+
+                    if((arrmix.length+1)!=35){
+                        
+                        // for(let i=0;i<arrmix.length;i++){
+                        //     console.log(arrmix[i]);
+                        // }
+
+                        //modulo 1
+                        for(let j=0;j<arrmix.length;j++){
+                            if(arrmix[j]%2==1){
+                                console.log(arrmix[j])
+                            }
+                        }
+
+                        //string
+                        for(let j=0;j<arrmix.length;j++){
+                            if(typeof arrmix[j]=='string'){
+                                console.log(arrmix[j])
+                            }
+                        }
+                        
+                    }else{
+                        console.log(false);
+                    }
+                }
+
+            }
+
+        let quiz4=new Nmr4;
+        console.log(quiz4.cond4());
 
 
             // 5. Array: [ 20, 'empat', 'limat', 8, 29, 30 ]
@@ -132,6 +241,48 @@
             // print the array of modulo = 0
             // else print boolean
 
+            class Nmr5{
+                constructor(arr1,arr2){
+                    this.arr1=[ 20, 'empat', 'limat', 8, 29, 30 ]
+                    this.arr2=[ 19, 'tujuh', 'sepuluh', 11, 23, 40 ]
+                }
+
+                cond5(){
+                    let x=4;
+                    let arrmix=this.arr1.concat(this.arr2);
+
+                    if((x+arrmix.length)!=35){
+                        
+                        // for(let i=0;i<arrmix.length;i++){
+                        //     console.log(arrmix[i]);
+                        // }
+
+                        //modulo 0
+                        for(let j=0;j<arrmix.length;j++){
+                            if(arrmix[j]%2==0){
+                                console.log(arrmix[j])
+                            }
+                        }
+
+                        //sum
+                        let total=0;
+                        for(let j=0;j<arrmix.length;j++){
+                            if(typeof arrmix[j]=='number'){
+                                total += arrmix[j];
+                            }
+                        }
+                        console.log(total);
+                        
+                    }else{
+                        console.log(false);
+                    }
+                }
+
+            }
+
+            let quiz5=new Nmr5;
+            console.log(quiz5.cond5());
+
 
             // 6. Array: [ 'data', 'empat', 8 , 3, 100, 8, 100, 3  ]
             // Array: [ 9, 7, 24, 'data', 'lima', 25]
@@ -140,6 +291,48 @@
             // print the array of sum array a + array b
             // print the array if the index modulo = 1
             // else print boolean
+
+            class Nmr6{
+                constructor(arr1,arr2){
+                    this.arr1=[ 'data', 'empat', 8 , 3, 100, 8, 100, 3  ]
+                    this.arr2=[ 9, 7, 24, 'data', 'lima', 25]
+                }
+
+                cond6(){
+                    let u=8;
+                    let sum=0;
+                    let arrmix=this.arr1.concat(this.arr2);
+                    for(let j=0;j<arrmix.length;j++){
+                            if(typeof arrmix[j]=='number'){
+                                sum += arrmix[j];
+                            }
+                    }
+
+                    if((arrmix.length+u)!=25){
+                        
+                        // for(let i=0;i<arrmix.length;i++){
+                        //     console.log(arrmix[i]);
+                        // }
+
+                        //modulo 1
+                        for(let j=0;j<arrmix.length;j++){
+                            if(arrmix[j]%2==1){
+                                console.log(arrmix[j])
+                            }
+                        }
+                        //sum
+                        console.log(sum);
+                        
+                    }else{
+                        console.log(false);
+                    }
+                }
+
+            }
+
+            let quiz6=new Nmr6;
+            console.log(quiz6.cond6());
+            
     </script>
 </body>
 </html>
