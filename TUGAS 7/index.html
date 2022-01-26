@@ -39,6 +39,10 @@
 
     for(let i=0; i<box.length; i++){
         box.item(i).style.backgroundColor = warna[i];
+
+        box[i].addEventListener("click", function(){
+            box.item(0).style.backgroundColor=warna[i];
+        });
     }
 
 </script>
