@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    <link rel="stylesheet" href="challangedom.css">
+</head>
+<body>
+
+    <section class="container" id="sectionOne">
+        <div class="box One" style="border: 2px solid black;"></div>
+    </section>
+
+
+    <section class="container sectionTwo">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+
+    <section class="container sectionTwo">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+
+    <section class="container sectionTwo">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+</body>
+<script>
+
+    let warna = ['#FFFFFF', '#38ACEC', '#A74AC7', '#F52887', '#6AFB92', '#4CC552', '#41A317', '#747170', '#625D5D', '#4A4344'];
+    let box = document.getElementsByClassName('box');
+
+    for(let i=0; i<box.length; i++){
+        box.item(i).style.backgroundColor = warna[i];
+    }
+
+</script>
+</html>
