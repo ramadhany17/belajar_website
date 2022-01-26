@@ -1,0 +1,18 @@
+https://whimsical.com/KUeTmLoDQnWSzacAfFgTJX
+
+if have account
+    username=
+    password=
+        while username!=corect_username&password!=correct_password
+            input username
+            input password
+        endwhile
+
+        if device==1
+            go to the page
+        else
+            send otp
+        endif
+else
+input new_username
+input new_password

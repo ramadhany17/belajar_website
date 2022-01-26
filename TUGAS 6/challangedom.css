@@ -1,0 +1,22 @@
+.container{
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+#sectionOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sectionTwo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array1=[2,5,10,"ini dia","data",100,38];
+        let array2=[3,100,283,'saya','adalah','kapiten',75];
+        let array3=[29,12,30,"ini","saya",85];
+        let array4=[20,12,43,54,24];
+        let array5=[20,"empat","limat",8,29,30];
+        let array6=["data","empat",8,3,100,3];
+
+        let b,a,x,c;
+
+        function looping1(params=[]){
+            if(params.length<50){
+                // params.forEach(function(item){
+                //     console.log(item);
+                // })
+                let i=0;
+                while(i<params.length){
+                    console.log(params[i]);
+                    i++
+                }
+            }else{
+                console.log(false);
+            }
+        }
+
+        b=15;
+        function looping2(params1=[],params2){
+            if(params2+params1.length!=32){
+                let i=0;
+                while(i<params1.length){
+                    console.log(params1[i]);
+                    i++
+                }
+            }else{
+                console.log(false);
+            }
+        }
+
+        looping2(array2,b);
+
+        a=15;
+        function looping3(params1=[],params2){
+            if(params1.length+params2==28){
+                let i=0;
+                while(i<params1.length){
+                    console.log(params1[i]);
+                    i++
+                }
+            }else{
+                console.log(false);
+            }
+        }
+
+        looping3(array3,a);
+
+        function looping4(params=[]){
+            if(params.length+1!=35){
+                let i=0;
+                while(i<params.length){
+                    console.log(params[i]);
+                    i++
+                }
+            }else{
+                console.log(false);
+            }
+        }
+
+        looping4(array4);
+
+        x=20;
+        function looping5(params1=[],params2){
+            if(params2+params1.length!=35){
+                let i=0;
+                while(i<params1.length){
+                    console.log(params1[i]);
+                    i++
+                }
+            }else{
+                console.log(false);
+            }
+        }
+
+        looping5(array5,x);
+
+        c=20;
+        function looping6(params1=[],params2){
+            if(params2+params1.length!=25){
+                let i=0;
+                while(i<params1.length){
+                    console.log(params1[i]);
+                    i++
+                }
+            }else{
+                console.log(false);
+            }
+        }
+
+        looping6(array6,c);
+    </script>
+    
+</body>
+</html>
