@@ -10,40 +10,45 @@
 <body>
 
     <section class="container" id="sectionOne">
-        <div class="box" id="box-0" style="border: 2px solid black;"></div>
+        <div class="box One" id="box0" style="border: 2px solid black;"></div>
     </section>
 
 
     <section class="container sectionTwo">
-        <div class="box" id="box-1"></div>
-        <div class="box" id="box-2"></div>
-        <div class="box" id="box-3"></div>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
     </section>
 
     <section class="container sectionTwo">
-        <div class="box" id="box-4"></div>
-        <div class="box" id="box-5"></div>
-        <div class="box" id="box-6"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
     </section>
 
     <section class="container sectionTwo">
-        <div class="box" id="box-7"></div>
-        <div class="box" id="box-8"></div>
-        <div class="box" id="box-9"></div>
+        <div class="box" id="box7"></div>
+        <div class="box" id="box8"></div>
+        <div class="box" id="box9"></div>
     </section>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js">
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"> -->
+    <script type="text/javascript" src="plugin/jquery/jquery.min.js"></script>
+    <script>
 
-    let warna = ['#FFFFFF', '#38ACEC', '#A74AC7', '#F52887', '#6AFB92', '#4CC552', '#41A317', '#747170', '#625D5D', '#4A4344'];
-    $(document).ready(function(){
-        for(let i=0;i<9;i++){
-            $('#box-${i}').css("background-color", warna[i]);
-        }
-        $('#box-${i}').on("click", function() {
-            $('#box-0').css("background-color", warna[i]);
+        let warna = ['#FFFFFF', '#38ACEC', '#A74AC7', '#F52887', '#6AFB92', '#4CC552', '#41A317', '#747170', '#625D5D', '#4A4344'];
+        $(document).ready(function(){
+            for(let i=0;i<=9;i++){
+                $("#box"+i).css("width", "200px");
+                $("#box"+i).css("height", "200px");
+                $("#box"+i).css("background-color", warna[i]);
+            
+            $("#box"+i).on("click", function() {
+                $("#box0").css("background-color", warna[i]);
+            });
+            }
         });
-    });
 
-</script>
+    </script>
 </body>
 </html>
